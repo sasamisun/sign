@@ -1,0 +1,119 @@
+/*
+http://paletton.com/#uid=3050u1klSrldRJOiiwvp1m4tDe4ksiu4ioIbn3yftKmJygfxk9tmc36Gi6ts6bkgyfGaI
+*/
+
+@import "./nomalize.css";
+@import "./typo.css";
+@import "./fontello/css/fontello.css";
+
+
+.main-menu{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    list-style: none;
+
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.main-menu :nth-child(n+2){
+    margin-left: 20px;
+}
+
+.header-title{
+    font-size: 200px;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("bg.jpg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #040404;
+    color: rgb(231, 224, 213);
+}
+
+.absolute-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+  
+.fog {
+position: relative;
+height: 100vh;
+width: 100%;
+}
+.fog__container, .back {
+position: absolute;
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+.fog__img {
+position: absolute;
+height: 100vh;
+width: 300vw;
+}
+.fog__img--first {
+background: url("fog-1.png") repeat-x;
+background-size: contain;
+background-position: center;
+animation: marquee 60s linear infinite;
+}
+.fog__img--second {
+    background: url("fog-2.png") repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-200vw, 0, 0);
+    }
+}
+
+.title{
+    margin-left: 200px;
+    font-size: 2em;
+}
+
+a {
+	padding: 0.1em 0.3em 0em 0.3em;
+	background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(33,150,244,1) 50%);
+	background-position: 0 0;
+	background-size: auto 200%;
+	transition: .3s;
+	color: #2196f4;
+}
+a:hover {
+	background-position: 0 100%;
+	color: #fff;
+}
+.main{
+    text-align: center;
+    margin-top: 200px;
+}
+.content-box{
+    margin-top: 50px;
+}
