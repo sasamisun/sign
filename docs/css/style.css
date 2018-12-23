@@ -117,3 +117,16 @@ a:hover {
 .content-box{
     margin-top: 50px;
 }
+
+@media screen and (max-width:600px){
+    .title{
+        font-size: 0.8em;
+        margin-left: 100px;
+    }
+    h2{
+        font-size: 1em;
+    }
+    body{
+        overflow: scroll;
+    }
+  }
