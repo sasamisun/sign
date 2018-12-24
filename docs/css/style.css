@@ -127,6 +127,9 @@ a:hover {
         font-size: 1em;
     }
     body{
+        height: auto;
+    }
+    .back{
         overflow: scroll;
     }
   }
