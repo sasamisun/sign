@@ -132,4 +132,7 @@ a:hover {
     .back{
         overflow: scroll;
     }
+    header{
+        margin-top: 100px;
+    }
   }
